@@ -1,0 +1,48 @@
+#header
+{
+    font-size: 100;
+    color: #CCAF54;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.navbar
+{
+    overflow: hidden;
+      background-color: white;
+      top: 150;
+      width: 100%;
+      position: fixed;
+}
+
+.navbar a {
+  display: block;
+  color: #CCAF54;
+  float: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 50;
+  font-family: 'Dosis', sans-serif;
+}
+
+.main {
+  margin-top: 30px;
+    padding: 16px;
+    height: 1500px;
+}
+
+.gallery
+{
+    margin: 10px 50px;
+}
+.gallery img
+{
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+.gallery img:hover
+{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}

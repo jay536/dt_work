@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>HTML5 Canvas</title>
+        <script>
+            var x = 10
+            var playerImage;
+            var celNumber = 0;
+            
+            function load()
+            {
+                playerImage = new Image();
+                playerImage.src = "player.png";
+            }
+            
+            function main()
+            {
+                load();
+                //Get a reference to our canvas by the specified ID
+                var canvas = document.getElementById("canvas");
+                
+                //Set the width and height
+                canvas.width = 640;
+                canvas.height = 480;
+                
+                //create drawing context
+                var ctx = canvas.getContext("2d");
+                
+                //call draw function
+                draw(ctx);
+            }
+        function draw(ctx)
+        {
+            ctx.fillStyle = "gray"
+            ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+            
+            var celWidth = playerImage.width / 5;
+            var celHeight = payerImage.height / 4;
+            
+            ctx.drawImage(playerImage,
+                          celNumber + celWidth, 0,
+                          100, 100,
+                          200, 200);
+            
+            x++;
+            celNumber++
+            
+            if (celNumber > 4)
+            {
+                celNumber = 0;
+            }
+            
+            window.requestAnimationFrame(function(){draw(ctx);})
+        }
+        
+        window.onload=main;
+        </script>
+    </head>
+    <body>
+        <canvas id="canvas" style="background: gray"></canvas>
+    </body>
+</html>
