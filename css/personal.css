@@ -9,7 +9,7 @@
 .navbar
 {
     overflow: hidden;
-      background-color: white;
+      background-color: #CCAF54;
       top: 150;
       width: 100%;
       position: fixed;
@@ -17,7 +17,7 @@
 
 .navbar a {
   display: block;
-  color: #CCAF54;
+  color: white;
   float: left;
   padding: 14px 16px;
   text-decoration: none;
@@ -28,7 +28,6 @@
 .main {
   margin-top: 30px;
     padding: 16px;
-    height: 1500px;
 }
 
 .gallery
@@ -39,7 +38,8 @@
 {
     transition: 1s;
     padding: 15px;
-    width: 200px;
+    width: 800;
+    height: 800;
 }
 .gallery img:hover
 {
@@ -47,5 +47,16 @@
     transform: scale(1.1);
 }
 
+
+footer
+{
+    padding: 10px;
+    font size: 17px;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    background: #CCAF54;
+    color: white;
+    bottom: 0
+}
 
 

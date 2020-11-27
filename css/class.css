@@ -9,7 +9,7 @@
 .navbar
 {
     overflow: hidden;
-      background-color: white;
+      background-color: #CCAF54;
       top: 150;
       width: 100%;
       position: fixed;
@@ -17,7 +17,7 @@
 
 .navbar a {
   display: block;
-  color: #CCAF54;
+  color: white;
   float: left;
   padding: 14px 16px;
   text-decoration: none;
