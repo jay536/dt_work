@@ -1,9 +1,12 @@
 <html>
     <head>
+        
         <title>Personal</title>
         <link rel="stylesheet"
             type="text/css"
-            href="css/personal.css" />
+            href="css/personal.css">
+        <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+        <script src="js/lightbox-plus-jquery.min.js"></script>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
                 </style>
@@ -17,6 +20,7 @@
             a.one:visited {color: #CCAF54;}
             a.one:link {font-family: 'Dosis', sans-serif;}
             </style>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
    <div id="header">
@@ -24,22 +28,63 @@
          </a></p>
     </div>
     
-    <div class="navbar">
-        <a href="personal.html">Personal</a> <a href="class.html">Class work</a> <a href="contact.html">Contact</a>
+    <div class="navbar" id="myHeader">
+    <div class="subnav">
+        <button class="subnavbtn">personal <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="#personal.html">All</a>
+            <a href="#fanart.html">Fanart</a>
+            <a href="#other.html">Other</a>
+            </div>
+        </div>
+    <div class="subnav">
+        <button class="subnavbtn">Class work <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="#class.html">All</a>
+            <a href="#year1.html">A level year 1</a>
+            <a href="#year2.html">A level year 2</a>
+            </div>
+        </div>
+    <div>
+        <a href="contact.html">Contact</a>
+        </div>
     </div>
     
     <div class="main">
     <div class="gallery">
         <center>
-     <a href="images/knight3.png"><img src="gallery/gallery,2.png"></a>
-     <a href="images/art novae inspired test1.png"><img src="gallery/gallery,1.png"></a>
-    <a href="images/the spiral1.png"><img src="gallery/gallery,7.png"></a>
-    <a href="images/the Lonely1.png"><img src="gallery/gallery,8.png"></a>
-    <a href="images/when in doubt,,lesbians2.png"><img src="gallery/gallery,5.png"></a>
-    <a href="images/moth boi4.png"><img src="gallery/moth man small1.png"></a>
+     <a href="images/knight.png" data-lightbox="mygallery" data-title="Knight"><img src="gallery/gallery,2.png"></a>
+     
+     <a href="images/lady.png" data-lightbox="mygallery" data-title="Fancy lady"><img src="gallery/gallery,1.png"></a>
+    
+    <a href="images/the spiral.png" data-lightbox="mygallery" data-title="The spiral"><img src="gallery/gallery,7.png"></a>
+    
+    <a href="images/the lonely.png" data-lightbox="mygallery" data-title="The lonely"><img src="gallery/gallery,8.png"></a>
+    
+    <a href="images/sun and mooon.png" data-lightbox="mygallery" data-title="Sun and moon"><img src="gallery/gallery,5.png"></a>
+   
+   <a href="images/mothman.png" data-lightbox="mygallery" data-title="Moth man"><img src="gallery/moth man small1.png"></a>
+   
+   <a href="images/pathologic.png" data-lightbox="mygallery" data-title="pathologic 2" ><img src="gallery/gallery 9.png"></a>
     </center>
     </div>
     </div>
+    
+    <script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+    
     <footer>
         this is a footer
     </footer>

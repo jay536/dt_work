@@ -15,6 +15,8 @@
 		044E8F2B256E8EFB00276604 /* class.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = class.css; path = ../../css/class.css; sourceTree = "<group>"; };
 		044E8F2C256E981300276604 /* contact.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = contact.html; path = ../../contact.html; sourceTree = "<group>"; };
 		044E8F2D256E983100276604 /* contact.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = contact.css; path = ../../css/contact.css; sourceTree = "<group>"; };
+		044E8F3F257293BD00276604 /* tests.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = tests.html; path = ../../tests.html; sourceTree = "<group>"; };
+		044E8F402572940E00276604 /* tests.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = tests.css; path = ../../tests.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -29,6 +31,8 @@
 				044E8F2B256E8EFB00276604 /* class.css */,
 				044E8F2C256E981300276604 /* contact.html */,
 				044E8F2D256E983100276604 /* contact.css */,
+				044E8F3F257293BD00276604 /* tests.html */,
+				044E8F402572940E00276604 /* tests.css */,
 			);
 			sourceTree = "<group>";
 		};

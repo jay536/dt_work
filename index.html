@@ -46,12 +46,25 @@
     </style>
     </head>
     <body>
-       <div id="header">
+       <div id="header" id="myHeader">
             Zenah Horner-Payne | Game Design Student
         </div>
          <p><a class="one" href="personal.html">Personal</a>
               <p><a class="two" href="class.html">Class Work</a>
                
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function muFunction(){
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classlist.remove("sticky");
+                }
+            }
             
     </body>
 </html>

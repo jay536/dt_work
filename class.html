@@ -4,6 +4,8 @@
         <link rel="stylesheet"
             type="text/css"
             href="css/class.css" />
+        <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+        <script src="js/lightbox-plus-jquery.min.js"></script>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
                 </style>
@@ -17,6 +19,7 @@
             a.one:visited {color: #CCAF54;}
             a.one:link {font-family: 'Dosis', sans-serif;}
             </style>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div id="header">
@@ -24,21 +27,42 @@
               </a></p>
          </div>
          
-         <div class="navbar">
+         <div class="navbar" id="myHeader">
              <a href="personal.html">Personal</a> <a href="class.html">Class work</a> <a href="contact.html">Contact</a>
          </div>
          
          <div class="main">
          <div class="gallery">
          <center>
-         <a href="images/layout final.jpg"><img src="gallery 2/cook book small.png"></a>
-         <a href="images/Mock up.jpg"><img src="gallery 2/cook book mock small.png"></a>
-         <a href="images/zine.jpg"><img src="gallery 2/zine.png"></a>
-         <a href="images/bookcover.png"><img src="gallery 2/theartof.png"></a>
-         <a href="images/FIRST PAGE DONE3.png"><img src="gallery 2/traveler page small.png"></a>
-         <a href="gallery 2/tea cups small.png"><img src="gallery 2/tea cups small.png"></a>
+         <a href="images/book page.png" data-lightbox="mygallery" data-title="Childrens cook book"><img src="gallery 2/cook book small.png"></a>
+        
+        <a href="images/book mockup.png" data-lightbox="mygallery" data-title="Book mockup"><img src="gallery 2/cook book mock small.png"></a>
+        
+        <a href="images/zine.png" data-lightbox="mygallery" data-title="Zine"><img src="gallery 2/zine.png"></a>
+        
+        <a href="images/bookcover.png" data-lightbox="mygallery" data-title="Book cover"><img src="gallery 2/theartof.png"></a>
+        
+        <a href="images/snowy plains.png" data-lightbox="mygallery" data-title="Book page"><img src="gallery 2/traveler page small.png"></a>
+        
+        <a href="images/cups.png" data-lightbox="mygallery" data-title="Tea company logo drafts"><img src="gallery 2/tea cups small.png"></a>
          </center>
          </div>
          </div>
+         
+         <script>
+         window.onscroll = function() {myFunction()};
+
+         var header = document.getElementById("myHeader");
+         var sticky = header.offsetTop;
+
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             header.classList.add("sticky");
+           } else {
+             header.classList.remove("sticky");
+           }
+         }
+         </script>
+   
     </body>
 </html>
