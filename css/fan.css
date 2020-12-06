@@ -1,7 +1,7 @@
 #header
 {
-    font-size: 100;
-    color: #CCAF54;
+    font-size: 5vw;
+    color: #a3bfb4;
     text-align: center;
     font-family: 'Dosis', sans-serif;
 }
@@ -91,11 +91,9 @@
     padding-top: 102px;
 }
 
-
 .main {
   margin-top: 30px;
     padding: 16px;
-    height: 1500px;
 }
 
 .gallery
@@ -117,7 +115,6 @@
 }
 
 
-
 footer
 {
     padding: 10px;
@@ -128,3 +125,6 @@ footer
     color: white;
     bottom: 0
 }
+
+
+

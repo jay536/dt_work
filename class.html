@@ -3,7 +3,7 @@
         <title>Class work</title>
         <link rel="stylesheet"
             type="text/css"
-            href="css/class.css" />
+            href="css/gallery.css" />
         <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
         <script src="js/lightbox-plus-jquery.min.js"></script>
             <style>
@@ -14,12 +14,11 @@
             </style>
             <style>
             a.one:link {text-decoration: none;}
-            a.one:link {font-size: 100;}
+            a.one:link {font-size: 5vw;}
             a.one:link {text-align: center;}
-            a.one:visited {color: #CCAF54;}
+            a.one:visited {color: #a3bfb4;}
             a.one:link {font-family: 'Dosis', sans-serif;}
             </style>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div id="header">
@@ -28,9 +27,26 @@
          </div>
          
          <div class="navbar" id="myHeader">
-             <a href="personal.html">Personal</a> <a href="class.html">Class work</a> <a href="contact.html">Contact</a>
+         <div class="subnav">
+             <button class="subnavbtn">personal <i class="fa fa-caret-down"></i></button>
+             <div class="subnav-content">
+                 <a href="personal.html">All</a>
+                 <a href="fan.html">Fanart</a>
+                 <a href="other.html">Other</a>
+                 </div>
+             </div>
+         <div class="subnav">
+             <button class="subnavbtn">Class work <i class="fa fa-caret-down"></i></button>
+             <div class="subnav-content">
+                 <a href="class.html">All</a>
+                 <a href="year1.html">A level year 1</a>
+                 <a href="year2.html">A level year 2</a>
+                 </div>
+             </div>
+         <div>
+             <a href="contact.html">Contact</a>
+             </div>
          </div>
-         
          <div class="main">
          <div class="gallery">
          <center>
@@ -63,6 +79,9 @@
            }
          }
          </script>
+         <footer>
+             this is a footer
+         </footer>
    
     </body>
 </html>
