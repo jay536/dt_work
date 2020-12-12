@@ -1,9 +1,11 @@
 <html>
     <head>
-        <title>Contact</title>
+        <title>A level year 2</title>
         <link rel="stylesheet"
             type="text/css"
-            href="css/contact.css" />
+            href="css/gallery.css" />
+        <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+        <script src="js/lightbox-plus-jquery.min.js"></script>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
                 </style>
@@ -45,27 +47,36 @@
              <a href="contact.html">Contact</a>
              </div>
          </div>
-        <center>
-         <img src="images/picrew 6.png" padding:"15px" >
-        </center>
-        <div>
-            Zenah Horner-Payne
-        </div>
+         <div class="main">
+         <div class="gallery">
+         <center>
+        <a href="images/bookcover.png" data-lightbox="mygallery" data-title="Book cover"><img src="gallery 2/theartof.png"></a>
         
-        <script>
-        window.onscroll = function() {myFunction()};
+        <a href="images/snowy plains.png" data-lightbox="mygallery" data-title="Book page"><img src="gallery 2/traveler page small.png"></a>
+        
+        <a href="images/cups.png" data-lightbox="mygallery" data-title="Tea company logo drafts"><img src="gallery 2/tea cups small.png"></a>
+         </center>
+         </div>
+         </div>
+         
+         <script>
+         window.onscroll = function() {myFunction()};
 
-        var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop;
+         var header = document.getElementById("myHeader");
+         var sticky = header.offsetTop;
 
-        function myFunction() {
-          if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-          } else {
-            header.classList.remove("sticky");
-          }
-        }
-        </script>
-    
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             header.classList.add("sticky");
+           } else {
+             header.classList.remove("sticky");
+           }
+         }
+         </script>
+         <footer>
+             this is a footer
+         </footer>
+   
     </body>
 </html>
+
