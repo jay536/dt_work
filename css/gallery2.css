@@ -1,9 +1,16 @@
 #header
 {
-    font-size: 5vw;
-    color: #a3bfb4;
     text-align: center;
-    font-family: 'Dosis', sans-serif;
+    top: 0;
+    padding: 0px;
+}
+
+.p4{
+    font-family: 'Montserrat', sans-serif;
+    color: #513a2c;
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 15px;
 }
 
 .header:hover
@@ -105,7 +112,6 @@ color:#CCAF54;
     margin-top: 30px;
     padding: 16px;
 }
-
 
 .row > .column
 {
@@ -235,6 +241,15 @@ img.hover-shadow {
     transition: 0s;
 }
 
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%
+    padding-top: 50px;
+    margin-bottom: auto;
+}
 footer
 {
     padding: 10px;

@@ -1,10 +1,10 @@
 <html>
     <head>
         
-        <title>Other</title>
+        <title>other</title>
         <link rel="stylesheet"
             type="text/css"
-            href="css/gallery.css">
+            href="css/gallery2.css">
         <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
         <script src="js/lightbox-plus-jquery.min.js"></script>
             <style>
@@ -16,24 +16,24 @@
            
             <style>
             a.one:link {text-decoration: none;}
-            a.one:link {font-size: 5vw;}
+            a.one:link {font-size: 3.5vw;}
             a.one:link {text-align: center;}
             a.one:visited {color: #a3bfb4;}
             a.one:link {font-family: 'Dosis', sans-serif;}
+            a.one:hover {text-decoration: underline;}
+            a.one:link {padding: 0px}
             </style>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
    <div id="header">
      <p><a class="one" href="index.html"> Zenah Horner-Payne | Game Design Student
          </a></p>
     </div>
-    
     <div class="navbar" id="myHeader">
     <div class="subnav">
         <button class="subnavbtn">Personal <i class="fa fa-caret-down"></i></button>
         <div class="subnav-content">
-            <a href="personal.html">All</a>
+            <a href="personal2.html">All</a>
             <a href="fan.html">Fanart</a>
             <a href="other.html">Other</a>
             </div>
@@ -41,7 +41,7 @@
     <div class="subnav">
         <button class="subnavbtn">Class work <i class="fa fa-caret-down"></i></button>
         <div class="subnav-content">
-            <a href="class.html">All</a>
+            <a href="class2.html">All</a>
             <a href="year1.html">A level year 1</a>
             <a href="year2.html">A level year 2</a>
             </div>
@@ -51,20 +51,63 @@
         </div>
     </div>
     
-    <div class="main">
-    <div class="gallery">
-        <center>
-     <a href="images/knight.png" data-lightbox="mygallery" data-title="Knight"><img src="gallery/gallery,2.png"></a>
-     
-     <a href="images/lady.png" data-lightbox="mygallery" data-title="Fancy lady"><img src="gallery/gallery,1.png"></a>
+    <p class="p4">When creating things for myself i like kinda going with the flow and enjoying myself. this means it tends to vary in style significantly. i feel this methid of working helps me improve at a much faster rate becuase i am experimenting with things i might not do im more high pressure scenarios like coursework.</p>
     
-    <a href="images/sun and mooon.png" data-lightbox="mygallery" data-title="Sun and moon"><img src="gallery/gallery,5.png"></a>
-   
-   <a href="images/mothman.png" data-lightbox="mygallery" data-title="Moth man"><img src="gallery/moth man small1.png"></a>
+    <div class="row">
+      <div class="column">
+          <div class="image">
+        <img src="gallery/gallery,2.png" style="width:100%" onclick="openModal();currentSlide(1)"
+            class="hover-shadow cursor">
+            </div>
+          </div>
+      <div class="column">
+          <div class="image">
+        <img src="gallery/gallery,1.png" style="width:100%" onclick="openModal();currentSlide(2)"
+            class="hover-shadow">
+            </div>
+            </div>
+      <div class="column">
+          <div class="image">
+        <img src="gallery/moth man small1.png" style="width:100%" onclick="openModal();currentSlide(3)"
+            class="hover-shadow">
+            </div>
+            </div>
+        <div class="column">
+            <div class="image">
+        <img src="gallery/gallery,5.png" style="width:100%" onclick="openModal();currentSlide(4)">
+            </div>
+            </div>
+        </div>
+      
+    <div id="imgLarge" class="large">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/knight.png" style="width:80%" class="center">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/lady.png" style="width:80%" class="center">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/mothman.png" style="width:80%" class="center">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/sun and mooon.png" style="width:80%" class="center">
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+    </div>
     </center>
-    </div>
-    </div>
-    
     <script>
     window.onscroll = function() {myFunction()};
 
@@ -79,10 +122,49 @@
       }
     }
     </script>
+    <script>
+    function openModal() {
+      document.getElementById("imgLarge").style.display = "block";
+    }
+    function closeModal() {
+      document.getElementById("imgLarge").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
     
     <footer>
         this is a footer
     </footer>
     </body>
 </html>
+
 

@@ -1,6 +1,6 @@
 #header
 {
-    font-size: 5vw;
+    font-size: 3.5vw;
     color: #CCAF54;
     text-align: center;
     font-family: 'Dosis', sans-serif;
@@ -15,7 +15,7 @@
 
 .sticky + .content
 {
-    padding-top: 102px;
+    padding-top: 50%;
 }
 
 

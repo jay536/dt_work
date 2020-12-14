@@ -1,16 +1,18 @@
 #header
 {
-    font-size: 5vw;
-    color: #a3bfb4;
     text-align: center;
-    font-family: 'Dosis', sans-serif;
+    top: 0;
+    padding: 0px;
 }
 
 .navbar
 {
     float: left;
     width: 100%;
-      background-color: #CCAF54;
+    background-color: #CCAF54;
+    margin-top: 0;
+    border-top: 0;
+    
 }
 
 .navbar a {
@@ -93,8 +95,42 @@
     padding-top: 102px;
 }
 
-.main {
-  margin-top: 30px;
-    padding: 16px;
-    height: 1500px;
+
+.image
+{
+    padding-top: 15px
 }
+
+
+.p4{
+    font-family: 'Montserrat', sans-serif;
+    color: #513a2c;
+    font-size: 2vw;
+    text-align: center;
+    padding: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.p5{
+    font-family: 'Montserrat', sans-serif;
+    color: #513a2c;
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 10px;
+    padding-top: 0px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.p6
+{
+    font-family: 'Montserrat', sans-serif;
+    color: #513a2c;
+    font-size: 2vw;
+    text-align: left;
+    padding: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+

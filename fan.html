@@ -1,10 +1,10 @@
 <html>
     <head>
         
-        <title>Fan art</title>
+        <title>Fanart</title>
         <link rel="stylesheet"
             type="text/css"
-            href="css/gallery.css">
+            href="css/gallery2.css">
         <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
         <script src="js/lightbox-plus-jquery.min.js"></script>
             <style>
@@ -16,32 +16,32 @@
            
             <style>
             a.one:link {text-decoration: none;}
-            a.one:link {font-size: 5vw;}
+            a.one:link {font-size: 3.5vw;}
             a.one:link {text-align: center;}
             a.one:visited {color: #a3bfb4;}
             a.one:link {font-family: 'Dosis', sans-serif;}
+            a.one:hover {text-decoration: underline;}
+            a.one:link {padding: 0px}
             </style>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
    <div id="header">
      <p><a class="one" href="index.html"> Zenah Horner-Payne | Game Design Student
          </a></p>
     </div>
-    
     <div class="navbar" id="myHeader">
     <div class="subnav">
         <button class="subnavbtn">Personal <i class="fa fa-caret-down"></i></button>
         <div class="subnav-content">
-            <a href="personal.html">All</a>
-            <a href="fanart.html">Fanart</a>
+            <a href="personal2.html">All</a>
+            <a href="fan.html">Fanart</a>
             <a href="other.html">Other</a>
             </div>
         </div>
     <div class="subnav">
         <button class="subnavbtn">Class work <i class="fa fa-caret-down"></i></button>
         <div class="subnav-content">
-            <a href="class.html">All</a>
+            <a href="class2.html">All</a>
             <a href="year1.html">A level year 1</a>
             <a href="year2.html">A level year 2</a>
             </div>
@@ -50,18 +50,53 @@
         <a href="contact.html">Contact</a>
         </div>
     </div>
+  
+    <p class="p4">I really enjoy making fanart because it is not only a way to express how much i like a media product, but it also gives me a chance to experiment with my own interpretations of that media through a visual format. I have done fanart for the game Pathologic and the podcast The Magnus Archives.</p>
     
-    <div class="main">
-    <div class="gallery">
-        <center>
-    <a href="images/the spiral.png" data-lightbox="mygallery" data-title="The spiral"><img src="gallery/gallery,7.png"></a>
-    
-    <a href="images/the lonely.png" data-lightbox="mygallery" data-title="The lonely"><img src="gallery/gallery,8.png"></a>
-   <a href="images/pathologic.png" data-lightbox="mygallery" data-title="pathologic 2" ><img src="gallery/gallery 9.png"></a>
+    <div class="row">
+      <div class="column">
+          <div class="image">
+        <img src="gallery/gallery 9.png" style="width:100%" onclick="openModal();currentSlide(1)"
+            class="hover-shadow cursor">
+            </div>
+          </div>
+        <div class="column">
+            <div class="image">
+            <img src="gallery/gallery,7.png" style="width:100%" onclick="openModal();currentSlide(2)">
+                </div>
+                </div>
+        <div class="column">
+            <div class="image">
+            <img src="gallery/gallery,8.png" style="width:100%" onclick="openModal();currentSlide(3)">
+                </div>
+                </div>
+            </div>
+      </div>
+      
+    <div id="imgLarge" class="large">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/pathologic.png" style="width:80%" class="center">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/the spiral.png" style="width:80%" class="center">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/the lonely.png" style="width:80%" class="center">
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+    </div>
     </center>
-    </div>
-    </div>
-    
     <script>
     window.onscroll = function() {myFunction()};
 
@@ -76,10 +111,49 @@
       }
     }
     </script>
+    <script>
+    function openModal() {
+      document.getElementById("imgLarge").style.display = "block";
+    }
+    function closeModal() {
+      document.getElementById("imgLarge").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
     
     <footer>
         this is a footer
     </footer>
     </body>
 </html>
+
 

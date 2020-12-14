@@ -9,9 +9,6 @@
 /* Begin PBXFileReference section */
 		040F753E254FD29300F2B4EE /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = index.html; path = ../../index.html; sourceTree = "<group>"; };
 		040F753F254FDAB200F2B4EE /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = style.css; path = ../../css/style.css; sourceTree = "<group>"; };
-		040F7541254FF8C900F2B4EE /* personal.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = personal.html; path = ../../personal.html; sourceTree = "<group>"; };
-		044E8F27256D6D1500276604 /* gallery.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = gallery.css; path = ../../css/gallery.css; sourceTree = "<group>"; };
-		044E8F2A256E8EDA00276604 /* class.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = class.html; path = ../../class.html; sourceTree = "<group>"; };
 		044E8F2C256E981300276604 /* contact.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = contact.html; path = ../../contact.html; sourceTree = "<group>"; };
 		044E8F3F257293BD00276604 /* tests.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = tests.html; path = ../../tests.html; sourceTree = "<group>"; };
 		044E8F402572940E00276604 /* tests.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = tests.css; path = ../../tests.css; sourceTree = "<group>"; };
@@ -22,6 +19,7 @@
 		049E006D25815B0D0028825D /* year2.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = year2.html; path = ../../year2.html; sourceTree = "<group>"; };
 		049E0077258282E50028825D /* gallery2.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = gallery2.css; path = ../../css/gallery2.css; sourceTree = "<group>"; };
 		049E00782582964D0028825D /* personal2.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = personal2.html; path = ../../personal2.html; sourceTree = "<group>"; };
+		04DDA48D25868E1F009ADDC3 /* class2.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = class2.html; path = ../../class2.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -30,13 +28,11 @@
 			children = (
 				040F753E254FD29300F2B4EE /* index.html */,
 				040F753F254FDAB200F2B4EE /* style.css */,
-				040F7541254FF8C900F2B4EE /* personal.html */,
 				049E00782582964D0028825D /* personal2.html */,
-				044E8F27256D6D1500276604 /* gallery.css */,
 				049E0077258282E50028825D /* gallery2.css */,
 				049E0068257C7D3A0028825D /* fan.html */,
 				049E006A257C7E530028825D /* other.html */,
-				044E8F2A256E8EDA00276604 /* class.html */,
+				04DDA48D25868E1F009ADDC3 /* class2.html */,
 				049E006C25815AD40028825D /* year1.html */,
 				049E006D25815B0D0028825D /* year2.html */,
 				044E8F2C256E981300276604 /* contact.html */,
