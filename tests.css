@@ -1,1 +1,48 @@
+#header
+{
+    text-align: center;
+}
+.wrapper
+{
+    margin: 0 auto;
+    width: 80%;
+    min-height: 100%;
+}
+html, body
+{
+    height: 100%;
+}
+.footer {
+    background:black;
+    color: grey;
+    height: 210px;
+    position: relative;
+    width: 100%;
+}
+
+.row
+{
+    padding: 15px;
+    width: 300%;
+    transition: 1s;
+    padding: 15px;
+    border: 5px solid transparent;
+    text-align: left;
+}
+
+.column
+{
+    float:left;
+    width: 25%;
+    text-align: left;
+}
+.footersection about
+{
+    text-align: left;
+}
+
+.footersection link
+{
+    font-size: 8vw
+}
 

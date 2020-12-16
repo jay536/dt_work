@@ -101,11 +101,22 @@
     padding-top: 15px
 }
 
+@media screen and (min-width: 480px) {
+    div.example {
+        font-size: 15;
+    }
+}
+@media screen and (max-width: 320px) {
+    div.example {
+        font-size: 10;
+    }
+}
+
 
 .p4{
     font-family: 'Montserrat', sans-serif;
     color: #513a2c;
-    font-size: 2vw;
+    font-size: 20;
     text-align: center;
     padding: 15px;
     padding-left: 20%;
@@ -115,7 +126,6 @@
 .p5{
     font-family: 'Montserrat', sans-serif;
     color: #513a2c;
-    font-size: 1.5vw;
     text-align: center;
     padding: 10px;
     padding-top: 0px;
@@ -123,14 +133,93 @@
     padding-right: 20%;
 }
 
+.column3
+{
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding-top: 40px
+}
+
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .p6
 {
     font-family: 'Montserrat', sans-serif;
     color: #513a2c;
-    font-size: 2vw;
+    font-size: 20;
     text-align: left;
-    padding: 15px;
     padding-left: 20%;
     padding-right: 20%;
+    text-decoration: none;
+}
+.p6:hover
+{
+    text-decoration: underline;
+}
+.p7:hover
+{
+    text-decoration: underline;
+}
+
+.p7
+{
+    font-family: 'Montserrat', sans-serif;
+    color: #513a2c;
+    text-align: left;
+    font-size: 20;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-decoration: none
+}
+
+.wrapper
+{
+    margin: 0 auto;
+    width: 80%;
+    min-height: 90%;
+}
+html, body
+{
+    height: 100%;
+}
+.footer {
+    background:#a3bfb4;
+    color: white;
+    height: 210px;
+    position: relative;
+    width: 100%;
+}
+
+.row
+{
+    padding: 15px;
+    width: 300%;
+    transition: 1s;
+    padding: 15px;
+    border: 5px solid transparent;
+    text-align: left;
+}
+
+.column
+{
+    float:left;
+    width: 25%;
+    text-align: left;
+}
+
+.footersectionabout
+{
+    font-family:'Dosis', sans-serif;
+}
+
+.footersectionlink
+{
+    font-family: 'Dosis', sans-serif;
 }
 
