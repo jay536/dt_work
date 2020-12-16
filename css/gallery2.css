@@ -8,7 +8,6 @@
 .p4{
     font-family: 'Montserrat', sans-serif;
     color: #513a2c;
-    font-size: 1.5vw;
     text-align: center;
     padding: 15px;
 }
@@ -267,5 +266,85 @@ body
     font-family: 'Dosis', sans-serif;
     color: #a3bfb4;
 }
+html, body
+{
+    height: 100%;
+}
+.footer {
+    background:#a3bfb4;
+    color: white;
+    height: 210px;
+    position: relative;
+    width: 100%;
+}
 
+.row2
+{
+    padding: 15px;
+    width: 300%;
+    transition: 1s;
+    padding: 15px;
+    border: 5px solid transparent;
+    text-align: left;
+}
 
+.column2
+{
+    float:left;
+    width: 25%;
+    text-align: left;
+}
+
+.footersectionabout
+{
+    font-family:'Dosis', sans-serif;
+}
+
+.footersectionlink
+{
+    font-family: 'Dosis', sans-serif;
+}
+
+@media screen and (min-width: 601px) {
+    div.footerbig {
+        font-size: 15;
+    }
+}
+@media screen and (max-width: 600px) {
+    div.footerbig {
+        font-size: 10;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    div.footersmall {
+        font-size: 12;
+    }
+}
+@media screen and (max-width: 600px) {
+    div.footersmall {
+        font-size: 7;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    div.copyright {
+        font-size: 8;
+    }
+}
+@media screen and (max-width: 600px) {
+    div.copyright {
+        font-size: 3;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    div.text {
+        font-size: 18;
+    }
+}
+@media screen and (max-width: 600px) {
+    div.text {
+        font-size: 13;
+    }
+}
