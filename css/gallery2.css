@@ -122,10 +122,9 @@ color:#CCAF54;
 
 .row > .column
 {
-    padding: 15px;
+    padding: 5px;
     width: 30%;
     transition: 1s;
-    padding: 15px;
     border: 5px solid transparent;
     text-align: center;
 }
@@ -147,7 +146,7 @@ color:#CCAF54;
 .image
 {
     transition: 1s;
-    padding: 15px;
+    padding: 8px;
     width: 100%;
     border: 5px solid transparent;
     
