@@ -16,8 +16,15 @@
 {
 color:#CCAF54;
 }
-
+/*navigation bar-->*/
 .navbar
+{
+    float: left;
+    width: 100%;
+      background-color: #CCAF54;
+}
+
+.navbar2
 {
     float: left;
     width: 100%;
@@ -38,6 +45,20 @@ color:#CCAF54;
 
 }
 
+.navbar2 a
+{
+  display: block;
+  color: white;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2vw;
+  font-family: 'Dosis', sans-serif;
+
+}
+
+/*dropdown menu*/
 .subnav
 {
     float: left;
@@ -61,6 +82,12 @@ color:#CCAF54;
 {
     background-color: #CCAF54;
 }
+
+.navbar2 a:hover, .subnav:hover .subnavbtn
+{
+    background-color: #CCAF54;
+}
+
 
 .subnav-content
 {
@@ -95,6 +122,7 @@ color:#CCAF54;
     padding: 16px;
 }
 
+/* keep nav at top*/
 .sticky
 {
     position: fixed;
@@ -107,6 +135,7 @@ color:#CCAF54;
     padding-top: 102px;
 }
 
+/* main page*/
 .wrapper
 {
     margin: 0 auto;
@@ -120,6 +149,7 @@ color:#CCAF54;
     padding: 16px;
 }
 
+/* gallery*/
 .row > .column
 {
     padding: 5px;
@@ -176,7 +206,7 @@ color:#CCAF54;
 
 
 
-
+/*buttons*/
 .close
 {
     color: #a3bfb4;
@@ -235,12 +265,15 @@ color:#CCAF54;
     font-size: 30;
     text-align: center;
 }
+/*interactive*/
 
-img.hover-shadow {
+img.hover-shadow
+{
   transition: 0.3s;
 }
 
-.hover-shadow:hover {
+.hover-shadow:hover
+{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -260,6 +293,7 @@ img.hover-shadow {
     padding-top: 50px;
     margin-bottom: auto;
 }
+/*footer*/
 footer
 {
     padding: 10px;
@@ -360,6 +394,7 @@ html, body
     }
 }
 
+/*model*/
 .model
 {
     z-index: 3;

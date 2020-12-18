@@ -5,8 +5,7 @@
         <link rel="stylesheet"
             type="text/css"
             href="css/gallery2.css">
-        <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-        <script src="js/lightbox-plus-jquery.min.js"></script>
+   
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
                 </style>
@@ -29,6 +28,7 @@
      <p><a class="one" href="index.html"> Zenah Horner-Payne | Game Design Student
          </a></p>
     </div>
+   <!--navbar-->
     <div class="navbar" id="myHeader">
     <div class="subnav">
         <button class="subnavbtn">Personal <i class="fa fa-caret-down"></i></button>
@@ -51,11 +51,12 @@
         <a href="contact.html">Contact</a>
         </div>
     </div>
-    
+    <!--start of page-->
     <div class="wrapper">
     <div class="text">
     <p class="p4">When creating things for myself I like kinda going with the flow and enjoying myself. This means it tends to vary in style significantly. I feel this method of working helps me improve at a much faster rate because I am experimenting with things I might not do I'm more high pressure scenarios like coursework.</p>
     </div>
+    <!--gallery-->
     <div class="row">
       <div class="column">
           <div class="image">
@@ -82,7 +83,7 @@
             </div>
         </div>
     </div>
-      
+    <!--big images-->
     <div id="imgLarge" class="large">
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
@@ -112,6 +113,8 @@
       
     </div>
     </center>
+    <!--javascript-->
+    <!--navbar-->
     <script>
     window.onscroll = function() {myFunction()};
 
@@ -126,6 +129,7 @@
       }
     }
     </script>
+    <!--gallery-->
     <script>
     function openModal() {
       document.getElementById("imgLarge").style.display = "block";
@@ -141,7 +145,6 @@
       showSlides(slideIndex += n);
     }
 
-    // Thumbnail image controls
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
@@ -164,7 +167,7 @@
       captionText.innerHTML = dots[slideIndex-1].alt;
     }
     </script>
-    
+    <!--footer-->
     <div class="footer">
          <div class="footercontent">
          <div class="row2">

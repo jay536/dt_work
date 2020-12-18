@@ -5,8 +5,7 @@
         <link rel="stylesheet"
             type="text/css"
             href="css/gallery2.css">
-        <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-        <script src="js/lightbox-plus-jquery.min.js"></script>
+       
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
                 </style>
@@ -33,7 +32,8 @@
      <p><a class="one" href="index.html"> Zenah Horner-Payne | Game Design Student
          </a></p>
     </div>
-    <div class="navbar" id="myHeader">
+   <!--navbar-->
+   <div class="navbar" id="myHeader">
     <div class="subnav">
         <button class="subnavbtn">Personal <i class="fa fa-caret-down"></i></button>
         <div class="subnav-content">
@@ -56,12 +56,14 @@
         </div>
     </div>
     
+    <!--start of page-->
     <div class="wrapper">
     
     <div class="text">
     <p class="p4">A lot of my own personal work reflects my interests. From fan art to folklore I enjoy experimenting with styles and subjects in the stuff I make for myself.</p>
 </div>
     
+    <!--gallery-->
     <div class="row">
       <div class="column">
           <div class="image">
@@ -104,7 +106,8 @@
                 </div>
         </div>
       
-    <div id="imgLarge" class="large">
+   <!--big images-->
+   <div id="imgLarge" class="large">
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
 
@@ -148,6 +151,8 @@
       
     </div>
     </center>
+    <!--javascript-->
+    <!--navbar-->
     <script>
     window.onscroll = function() {myFunction()};
 
@@ -162,6 +167,8 @@
       }
     }
     </script>
+    
+    <!--gallery-->
     <script>
     function openModal() {
       document.getElementById("imgLarge").style.display = "block";
@@ -177,7 +184,6 @@
       showSlides(slideIndex += n);
     }
 
-    // Thumbnail image controls
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
@@ -201,6 +207,7 @@
     }
     </script>
     
+    <!--footer-->
     <div class="footer">
          <div class="footercontent">
          <div class="row2">

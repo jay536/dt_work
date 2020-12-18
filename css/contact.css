@@ -4,7 +4,7 @@
     top: 0;
     padding: 0px;
 }
-
+/*nav bar*/
 .navbar
 {
     float: left;
@@ -26,7 +26,7 @@
   font-family: 'Dosis', sans-serif;
 
 }
-
+/*dropdown menu*/
 .subnav
 {
     float: left;
@@ -100,7 +100,7 @@
 {
     padding-top: 15px
 }
-
+/*text responsiveness*/
 @media screen and (min-width: 601px) {
     div.example {
         font-size: 15;
@@ -122,7 +122,7 @@
     }
 }
 
-
+/*text*/
 .p4{
     font-family: 'Montserrat', sans-serif;
     color: #513a2c;
@@ -157,6 +157,7 @@
     clear: both;
 }
 
+/*links*/
 .p6
 {
     font-family: 'Montserrat', sans-serif;
@@ -195,6 +196,7 @@ html, body
 {
     height: 100%;
 }
+/*footer*/
 .footer {
     background:#a3bfb4;
     color: white;
@@ -202,6 +204,7 @@ html, body
     position: relative;
     width: 100%;
 }
+
 
 .row
 {
@@ -219,6 +222,7 @@ html, body
     width: 25%;
     text-align: left;
 }
+
 
 .footersectionabout
 {
